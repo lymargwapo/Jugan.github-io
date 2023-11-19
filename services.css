@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav-link{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    animation: slide-top 0.7s forwards;
+}
+
+.header h2{
+    font-size: clamp(2rem, 2.625rem + -2vw, 1.5rem);
+font-weight: bold;
+color: #fff;
+letter-spacing: 3px;
+font-size: 20px;
+font-family: sans-serif;
+animation: slide-top 0.7s forwards;
+}
+@keyframes slide-top {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header span{
+    color: rgb(97, 210, 230);
+}
+
+
+.nav-link ul{
+display: flex;
+gap: 3rem;
+align-items: center;
+}
+
+li{
+list-style: none;
+text-transform: uppercase;
+font-weight: 500;
+font-size: clamp(0.625rem, 0rem + 2vw, 1.125rem);
+letter-spacing: 3px;
+transition: 0.6s;
+}
+
+li a{
+text-decoration: none;
+color: rgb(97, 210, 230);
+border-radius: 1rem;
+padding: 5px 1rem;
+font-family: sans-serif;
+font-size: 18px;
+}
+
+
+li a:hover{
+background: linear-gradient(#61d2e6, #2713c4);
+color: #fff;
+
+}
+
+.banner{
+height: 100vh;
+width: 100%;
+position: absolute;
+background-size: cover;
+top: 0;
+z-index: -1;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+        }
+    
+    
+    .tables{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0 15rem;
+    }
+    
+    
+        .tables .table-1{
+            background: linear-gradient(#07012f,#2713c4);
+            box-shadow: 0px 5px 15px #3c35ff;
+            padding: 2rem 2rem;
+            border: 2.5px  #000000;
+            border-radius: 1rem;
+            height: 10rem;
+            width: 17rem;
+            transition: scale .5s all ease-in-out;
+            animation: slide-tl 0.7s forwards;
+        }
+        @keyframes slide-tl {
+          0% {
+            transform: translateY(-100px) translateX(-100px);
+          }
+          100% {
+            transform: translateY(0) translateX(0);
+          }
+        }        
+    
+        .tables .table-1:hover{
+            scale: 1.1;
+        }
+    
+        .table-1 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+   
+    
+        .table-1 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-2{
+            background: linear-gradient(#07012f,#2713c4);
+            box-shadow: 0px 5px 15px #3c35ff;
+            padding: 2rem 2rem;
+            border: 2.5px  #000000;
+            border-radius: 1rem;
+            height: 10rem;
+            width: 17rem;
+            transition: scale .5s all ease-in-out;
+            animation: slide-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        @keyframes slide-tr {
+          0% {
+            transform: translateY(-100px) translateX(100px);
+          }
+          100% {
+            transform: translateY(0) translateX(0);
+          }
+        }
+        .tables .table-2:hover{
+            scale: 1.1;
+        }
+    
+        .table-2 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-2 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-3{
+            background: linear-gradient(#07012f,#2713c4);
+            box-shadow: 0px 5px 15px #3c35ff;
+            padding: 2rem 2rem;
+            border: 2.5px  #000000;
+            border-radius: 1rem;
+            height: 10rem;
+            width: 17rem;
+            transition: scale .5s all ease-in-out;
+            animation: slide-bl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        @keyframes slide-bl {
+          0% {
+            transform: translateY(100px) translateX(-100px);
+          }
+          100% {
+            transform: translateY(0) translateX(0);
+          }
+        }
+        .tables .table-3:hover{
+            scale: 1.1;
+        }
+    
+        .table-3 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-3 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-4{
+            background: linear-gradient(#07012f,#2713c4);
+            box-shadow: 0px 5px 15px #3c35ff;
+            padding: 2rem 2rem;
+            border: 2.5px  #000000;
+            border-radius: 1rem;
+            height: 10rem;
+            width: 17rem;
+            transition: scale .5s all ease-in-out;
+            animation: slide-br 0.7s both;
+        }
+        @keyframes slide-br {
+          0% {
+            transform: translateY(100px) translateX(100px);
+          }
+          100% {
+            transform: translateY(0) translateX(0);
+          }
+        }
+    
+        .tables .table-4:hover{
+            scale: 1.1;
+        }
+    
+        .table-4 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-4 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .contacts{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -31.7rem;
+        left: .3rem;
+        width: 5rem;
+    }
+
+    
+  .cube-loader {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 4s linear infinite;
+    top: 3.5%;
+    left: 9.5%;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotateX(-30deg) rotateY(0);
+    }
+  
+    100% {
+      transform: rotateX(-30deg) rotateY(360deg);
+    }
+  }
+  
+  .cube-loader .cube-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+  }
+  
+  .cube-loader .cube-wrapper .cube-span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(10px);
+    background: linear-gradient(to bottom,
+              hsl(0, 0%, 100%) 0%,
+              hsl(0, 0%, 100%) 5.5%,
+              hsl(0, 0%, 100%) 12.1%,
+              hsl(0, 0%, 0%) 100%,
+              hsl(0, 0%, 100%) 27.9%,
+              hsl(0, 0%, 100%) 36.6%,
+              hsl(0, 0%, 100%) 45.6%,
+              hsl(0, 0%, 0%) 100%,
+              hsl(0, 0%, 100%) 63.4%,
+              hsl(0, 0%, 100%) 71.7%,
+              hsl(0, 0%, 100%) 79.4%,
+              hsl(0, 0%, 0%) 100%,
+              hsl(0, 0%, 100%) 100%,
+              hsl(0, 0%, 100%) 100%,
+              hsl(0, 0%, 100%) 100%,
+              hsl(0, 0%, 0%) 100%);
+  }
+  
+  .cube-top {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: hsl(0, 0%, 98%) 0%;
+    transform: rotateX(90deg) translateZ(10px);
+    transform-style: preserve-3d;
+  }
+  
+  .cube-top::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: hsl(0, 0%, 33%) 19.6%;
+    transform: translateZ(-30px);
+    filter: blur(10px);
+    box-shadow: 0 0 10px #ffffff,
+          0 0 20px hsl(0, 0%, 0%) 19.6%,
+          0 0 30px #ffffff,
+          0 0 40px hsl(0, 0%, 0%) 19.6%;
+  }
+  
+  .pyramid-loader {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    display: block;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg);
+    top: 80%;
+    left: 40%;
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: spin 4s linear infinite;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .pyramid-loader .wrapper .side {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(to bottom right, #FFA500, #FF4500);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  
+  .pyramid-loader .wrapper .side1 {
+    transform: rotateZ(-30deg) rotateY(90deg);
+    background: linear-gradient(to bottom right, #FF4500, #FFA500);
+  }
+  
+  .pyramid-loader .wrapper .side2 {
+    transform: rotateZ(30deg) rotateY(90deg);
+    background: linear-gradient(to bottom right, #FFA500, #FF4500);
+  }
+  
+  .pyramid-loader .wrapper .side3 {
+    transform: rotateX(30deg);
+    background: linear-gradient(to bottom right, #FFA500, #FF4500);
+  }
+  
+  .pyramid-loader .wrapper .side4 {
+    transform: rotateX(-30deg);
+    background: linear-gradient(to bottom right, #FF4500, #FFA500);
+  }
+  
+  .pyramid-loader .wrapper .shadow {
+    width: 60px;
+    height: 60px;
+    background: #FF8C00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotateX(90deg) translateZ(-40px);
+    filter: blur(12px);
+  }
